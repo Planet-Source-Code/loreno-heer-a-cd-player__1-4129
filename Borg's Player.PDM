@@ -1,0 +1,111 @@
+[Root]
+Most Recent Package=Standardm‰ﬂiges Setup zu
+Most Recent Deploy=Diskettenweitergabe 1
+
+
+[Package|Standardm‰ﬂiges Setup zu|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Paket
+
+[Package|Standardm‰ﬂiges Setup zu|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standardm‰ﬂiges Setup zu|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standardm‰ﬂiges Setup zu|Files Found]
+
+[Package|Standardm‰ﬂiges Setup zu|Files Released]
+
+[Package|Standardm‰ﬂiges Setup zu|Missing Dependency Information]
+
+[Package|Standardm‰ﬂiges Setup zu|Out-of-Date Dependency Information]
+
+[Package|Standardm‰ﬂiges Setup zu|Files Added]
+
+[Package|Standardm‰ﬂiges Setup zu|Files Removed]
+
+[Package|Standardm‰ﬂiges Setup zu|Files In Project]
+C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Borg's Player.exe=Yes
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=Yes
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=Yes
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=Yes
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=Yes
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINDOWS\SYSTEM\VB6DE.DLL=Yes
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=Yes
+C:\WINDOWS\SYSTEM\CMDLGDE.DLL=Yes
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCC2DE.DLL=Yes
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=Yes
+C:\WINDOWS\SYSTEM\MSCMCDE.DLL=Yes
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=Yes
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standardm‰ﬂiges Setup zu|Configure Registry Files]
+Applicable=No
+
+[Package|Standardm‰ﬂiges Setup zu|Configure Remote Servers]
+Applicable=No
+
+[Package|Standardm‰ﬂiges Setup zu|Install Locations]
+C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Borg's Player.exe=$(AppPath)
+C:\WINDOWS\SYSTEM\MSVBVM60.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEAUT32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\OLEPRO32.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\ASYCFILT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\STDOLE2.TLB=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINDOWS\SYSTEM\VB6DE.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\COMDLG32.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\CMDLGDE.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCT2.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCC2DE.DLL=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCOMCTL.OCX=$(WinSysPath)
+C:\WINDOWS\SYSTEM\MSCMCDE.DLL=$(WinSysPath)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINDOWS\SYSTEM\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Programme\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standardm‰ﬂiges Setup zu|Configure Shared Files]
+Applicable=Yes
+C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Borg's Player.exe=No
+
+[Package|Standardm‰ﬂiges Setup zu|Distribution]
+Type=multi
+Size=1.44 MB
+Title=Borg's  Player
+
+[Package|Standardm‰ﬂiges Setup zu|IconGroups]
+Group0=Borg's  Player
+PrivateGroup0=Wahr
+Parent0=$(Programs)
+
+[Package|Standardm‰ﬂiges Setup zu|Borg's  Player]
+Icon1="Borg's Player.exe"
+Title1=Borg's  Player
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standardm‰ﬂiges Setup zu|Package]
+PackageFolder=C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Paket
+ProjectFolder=C:\Programme\Microsoft Visual Studio\VB98\Programme\Play
+ServerSideCab=
+File1=C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Paket\setup.exe
+File2=C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Paket\Setup.Lst
+File3=C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Paket\Borg's1.CAB
+File4=C:\Programme\Microsoft Visual Studio\VB98\Programme\Play\Paket\Borg's2.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz
+
+[Deploy|Diskettenweitergabe 1|Root]
+Package=Standardm‰ﬂiges Setup zu
+Handler=PDWizard.FloppyDplySubWiz
+Floppy Drive=a:\
+Format=No

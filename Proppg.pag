@@ -1,0 +1,77 @@
+VERSION 5.00
+Begin VB.PropertyPage Properties 
+   Caption         =   "Properties"
+   ClientHeight    =   3492
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5928
+   LockControls    =   -1  'True
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   3492
+   ScaleWidth      =   5928
+   Begin VB.ComboBox cboScrollMode 
+      Height          =   288
+      Left            =   90
+      TabIndex        =   3
+      Text            =   "cboScrollMode"
+      Top             =   1032
+      Width           =   2700
+   End
+   Begin VB.TextBox txtText 
+      Height          =   330
+      Left            =   90
+      TabIndex        =   1
+      Top             =   370
+      Width           =   2700
+   End
+   Begin VB.Label lblScrollMode 
+      Caption         =   "ScrollMode:"
+      Height          =   240
+      Left            =   90
+      TabIndex        =   2
+      Top             =   770
+      Width           =   2700
+   End
+   Begin VB.Label lblText 
+      Caption         =   "Text:"
+      Height          =   240
+      Left            =   90
+      TabIndex        =   0
+      Top             =   120
+      Width           =   2700
+   End
+End
+Attribute VB_Name = "Properties"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Private Sub cboScrollMode_Change()
+  Changed = True
+  
+End Sub
+
+Private Sub PropertyPage_Initialize()
+  With cboScrollMode
+    .AddItem "R_to_L"
+    .AddItem "L_to_R"
+  End With
+End Sub
+
+Private Sub txtText_Change()
+    Changed = True
+End Sub
+
+Private Sub PropertyPage_ApplyChanges()
+    SelectedControls(0).ScrollMode = cboScrollMode.ListIndex
+    SelectedControls(0).Text = txtText.Text
+End Sub
+
+Private Sub PropertyPage_SelectionChanged()
+    cboScrollMode.ListIndex = SelectedControls(0).ScrollMode
+    txtText.Text = SelectedControls(0).Text
+End Sub
+
+
